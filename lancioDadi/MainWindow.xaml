@@ -1,0 +1,31 @@
+﻿<Window x:Class="lancioDadi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lancioDadi"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Image Source="dadi.jpg" Stretch="Fill"/>
+        <Label Content="LANCIO DADI" HorizontalAlignment="Left" Height="55" Margin="293,30,0,0" VerticalAlignment="Top" Width="225" FontWeight="Bold" FontSize="24" Background="#FFD854FF"/>
+        <Button x:Name="Btn_lanciodadi" Content="LANCIA I DADI" HorizontalAlignment="Left" Height="73" Margin="293,315,0,0" VerticalAlignment="Top" Width="225" FontWeight="Bold" Click="Btn_lanciodadi_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FFF5D50B" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="Lbl_risultato" Content="                          " HorizontalAlignment="Left" Height="57" Margin="293,179,0,0" VerticalAlignment="Top" Width="225" FontWeight="Bold" FontSize="20">
+            <Label.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="Cyan" Offset="1"/>
+                </RadialGradientBrush>
+            </Label.Background>
+        </Label>
+        <Image x:Name="Img_dado1" HorizontalAlignment="Left" Height="151" Margin="50,85,0,0" VerticalAlignment="Top" Width="181"/>
+        <Image x:Name="Img_dado2" HorizontalAlignment="Left" Height="151" Margin="548,85,0,0" VerticalAlignment="Top" Width="207"/>
+    </Grid>
+</Window>
