@@ -58,7 +58,7 @@ namespace lancioDadi
             Lbl_risultato.Content = tiro; 
 
             Img_dado1.Source=new BitmapImage(new Uri($"{dado1}.jpg", UriKind.Relative)); 
-
+             
             Img_dado2.Source = new BitmapImage(new Uri($"{dado2}.jpg", UriKind.Relative));
 
         }
